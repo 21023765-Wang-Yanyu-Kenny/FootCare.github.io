@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="top">
-            <img src="WhatsApp Image 2023-10-25 at 01.19.22_11126b1c.jpg" class="icon" />
-        </div>
-
-        <div class="bottom">
-            <div class="row">
-                <img src="WhatsApp Image 2023-10-25 at 01.19.21_feaa2d18.jpg" class="title" />
-                <img src="WhatsApp Image 2023-10-25 at 01.25.18_b6115a19.jpg" class="title" />
+        <form action="registration_process.php" method="POST">
+            <h2>Registration</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
             </div>
-
-            <div class="slogan">
-                <p class="text">Empowering Feet, Enhancing Health</p>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
-
-            <div class="button-container">
-                <!-- Navigate to register screen -->
-                <button class="button" onclick="navigateToRegister()">Create an Account</button>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
             </div>
-
-            <div class="row">
-                <p class="text">Already have an account?</p>
-
-                <!-- Navigate to login screen -->
-                <a href="login.html" class="text link">Sign In</a>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
             </div>
-        </div>
+            <button type="submit">Register</button>
+        </form>
     </div>
 </body>
 </html>
