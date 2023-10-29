@@ -27,7 +27,7 @@
         </div>
         <div class="split-container">
                 <div class="formBox">
-                    <form class="register" action="registration_process.php" method="POST">
+                    <form class="register" onsubmit="return showSuccessAlert()">
                         <h2>Registration</h2>
                         <div class="form-group">
                             <label for="username">Username:</label>
@@ -58,5 +58,13 @@
             </div>
         </div>
     </div>
+
+        <script>
+        function showSuccessAlert() {
+            alert("Registered");
+            return true; // Allow form submission to continue
+        }
+    </script>
+    
 </body>
 </html>
